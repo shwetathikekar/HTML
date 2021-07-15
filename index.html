@@ -1,182 +1,64 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Basic HTML</title>
-	</head>
-	<body>
-			<!-- Heading -->
+<html lang="en">
 
-			<h1>First Heading</h1>
-			<h2>Second Heading</h2>
-			<h3>Third Heading</h3>
-			<h4>Fourth Heading</h4>
-			<h5>Fifth Heading</h5>
-			<h6>Sixth Heading</h6>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>HTML: A Beginners Guide</title>
+</head>
 
-			<!--Paragraph-->
+<body>
 
-			<p>
-				<em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. <a href="http://google.com" target="_blank">Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur.</a> Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em>
-			</p>
-			<p>
-				<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong>
-			</p>
+    <!-- Warning - used css for style (type usedonly to show that the exist)-->
 
-			<!-- Lists -->
+    <header>
+        <ul type="circle"> 
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <ul type="disc">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <ul type="square">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
 
-			<!--Unordered list-->
-			<ul>
-				<li>item1</li>
-				<li>item2</li>
-				<li>item3</li>
-				<li>item4</li>
-			</ul>
+    </header>
+    <main>
+        <section></section>
+        <section></section>
+        <aside>
+            <!-- image as a link -->
+            <div>
+                <br>
+                <a href="https://google.com" target="_blank"><img src="/images/image.jpg" width="300px"></a>
+            </div>
+            <!-- youtube video emmbedding -->
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
-			<!--Ordered list-->
-			<ol>
-				<li>item1</li>
-				<li>item2</li>
-				<li>item3</li>
-				<li>item4</li>
-			</ol>
+            <!-- local video emmbedding -->
+            <div>
+                <video src="/images/video.mp4" controls autoplay loop width="700px"></video>
+            </div>
 
-			<!-- Table -->
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Email</th>
-						<th>Age</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Shweta</td>
-						<td>Shweta@gmail.com</td>
-						<td>20</td>
-					</tr>
-					<tr>
-						<td>Radha</td>
-						<td>Radha@gmail.com</td>
-						<td>20</td>
-					</tr>
-				</tbody>
-			</table>
+            <!-- some websites are not allowed -->
+            <div>
+                <iframe src="https://bing.com" frameborder="0" width="892px"></iframe>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p> <center>Copyright &copy; 2021 Shweta Thikekar</center> </p>
+    </footer>
+</body>
 
-			<br>
-			<hr>
-			<br>
-
-			<!--Forms-->
-
-			<form action="backend.php" method="GET">
-
-				<div>
-					<label>First Name:</label>
-					<input type="text" name="firstName" placeholder="Enter First Name">
-				</div>
-
-				<br>
-
-				<div>
-					<label>Last Name:</label>
-					<input type="text" name="LastName" placeholder="Enter Last Name">
-				</div>
-
-				<br>
-
-				<div>
-					<label>Email:</label>
-					<input type="text" name="Email" placeholder="Enter EmailId">
-				</div>
-
-				<br>
-
-				<div>
-					<label>Message:</label>
-					<textarea name="Message" value="Enter Message"></textarea>
-				</div>
-
-				<br>
-
-				<div>
-					<label>Gender:</label>
-					<select>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-						<option value="other">Other</option>
-					</select>
-				</div>
-
-				<br>
-
-				<div>
-					<label>Age:</label>
-					<input type="number" name="Age" value="20">
-				</div>
-
-				<br>
-
-				<div>
-					<label>Birth Date:</label>
-					<input type="date" name="BirthDate">
-				</div>
-
-				<br>
-
-				<input type="submit" name="submit" value="Submit">
-
-			</form>
-
-			<!--Button-->
-
-			<br>
-
-			<button>Click Me</button>
-
-			<!--image-->
-			<br>
-			<br>
-
-			<a href="images/image.jpg" target="_blank">
-				<div>			
-					<img src="images/image.jpg" alt="HTML" width="50%" height="50%">
-				</div>
-			</a>
-
-
-			<!--Quotation-->
-
-			<blockquote cite="http://google.com">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</blockquote>
-
-			<p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
-
-			<p>
-				<cite>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</cite>
-			</p>
-
-<a href="blog.html">Go to blog</a>
-
-
-	</body>
 </html>
